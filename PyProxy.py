@@ -138,7 +138,7 @@ def main():
         print(usage)
         sys.exit()
     print("[+] PyProxy Listening on port %d"%port)
-    server.bind(("127.0.0.1", port))
+    server.bind(("", port))
     server.listen(5)
     internal.append(server)
     try:
